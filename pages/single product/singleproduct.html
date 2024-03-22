@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home | M.Salman Nazeer</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- Font Awosome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Nave Bar -->
+    <nav class="navbar navbar-expand-lg header navbar-light sticky-top bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../../img/logo-removebg-preview.png" alt="" width="150" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex w-75 mx-auto searchbar rounded overflow-hidden" role="search">
+                    <input class="form-control me-0 rounded-0 w-75" type="search" placeholder="Search"
+                        aria-label="Search" />
+                    <button class="btn bg-white rounded-0 rounded-end" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../login/login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../signup/signup.html">Signup</a>
+                    </li>
+                </ul>
+
+                <div class="align-items-center text-center" id="userBox">
+                    <p class="text-white m-0" id="userName">UserName</p>
+                    <button onclick="logoutUser()" class="btn btn-light">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+     <!-- Product View Section Start -->
+
+     <div class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="p-2">
+                        <img id="productImage" width="100%" src="" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h1 id="productTitle"></h1>
+                    <h2 id="productDescription"></h2>
+                    <h2 class="display-2">Price <span id="productPrice"></span> /-</h2>
+                
+                    <div>
+                        <button onclick="placeOrder()" class="btn btn-dark">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="header container-fluid text-white bg-dark mt-2">
+        <main class="container">
+            <!-- Section 1 -->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-3 text-warning fs-1 p-2">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                        <div class="col-8 p-2 text-center">
+                            <h5>FREE DELIVERY</h5>
+                            <p>Back Guarantee In 7 Days</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-3 text-warning fs-1 p-2">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                        </div>
+                        <div class="col-8 p-2 text-center">
+                            <h5>Member Discount</h5>
+                            <p>Onevery Order Over $130.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-3 text-warning fs-1 p-2">
+                            <i class="fa-solid fa-percent fs-1"></i>
+                        </div>
+                        <div class="col-8 p-2 text-center">
+                            <h5>Return Policy</h5>
+                            <p>Support 24 Hours A Day</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-3 text-warning fs-1 p-2">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                        </div>
+                        <div class="col-8 p-2 text-center">
+                            <h5>FREE DELIVERY</h5>
+                            <p>Free Shipping On All Order</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <!-- Section 2 -->
+            <!-- Left side -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        <h2>Store Information</h2>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i> Bigstore - Online Mega
+                            Store 507-Union Trade CentreFrance
+                        </p>
+                        <p>
+                            <a href="tel:000000000" class="text-white text-decoration-none"><i
+                                    class="fa-solid fa-phone"></i> 000-000-0000</a>
+                        </p>
+                        <p>
+                            <a href="mailto:someone@gmail.com" class="text-white text-decoration-none"><i
+                                    class="fa-solid fa-envelope"></i> sales@yourcompany.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right side -->
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <h2>Newsletter</h2>
+                        <p>
+                            Subscribe to our latest newsletter to get news about special
+                            discounts.
+                        </p>
+                        <div class="d-flex p-2 seachBar">
+                            <input type="Search" placeholder="Search..." class="form-control rounded-0" />
+                            <button class="btn bg-white rounded-0" type="submit">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <!-- Seaction 3 -->
+            <div class="row m-0">
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-around">
+                        <a href="" class="text-white fs-3"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="" class="text-white fs-3">
+                            <i class="fa-brands fa-twitter"></i></a>
+                        <a href="" class="text-white fs-3">
+                            <i class="fa-solid fa-rss"></i></a>
+                        <a href="" class="text-white fs-3">
+                            <i class="fa-brands fa-youtube"></i></a>
+                        <a href="" class="text-white fs-3">
+                            <i class="fa-brands fa-pinterest"></i></a>
+                        <a href="" class="text-white fs-3">
+                            <i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="m-0 mt-2 text-center" style="font-size: 0.9rem">
+                        <p>© 2024 - Ecommerce software by PrestaShop™</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-around m-0 my-2">
+                        <img src="../../img/payment/american_express.png" alt="" />
+                        <img src="../../img/payment/carte_bleue.png" alt="" />
+                        <img src="../../img/payment/master_card.png" alt="" />
+                        <img src="../../img/payment/paypal.png" alt="" />
+                        <img src="../../img/payment/visa.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </main>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script type="module" src="singleproduct.js"></script>
+</body>
+
+</html>
